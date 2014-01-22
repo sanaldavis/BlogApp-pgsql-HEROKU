@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% if error %}
+	{{ error }}
+{% endif %}
+
+	<div class="jumbo" align='center'>
+	<u><i><h2> Login
+	</h2></i></u>
+
+<form method=post >
+	<d1>
+		<dt> Username:
+		<dd> <input type=text name=username value="{{request.form.username}}">
+		<dt> Password:
+		<dd> <input type=password name=password>
+	</d1>
+	<p> <input type=submit value=Login>
+</form>
+
+{% endblock %}
+ 

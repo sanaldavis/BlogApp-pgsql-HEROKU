@@ -1,0 +1,26 @@
+
+<html>
+	<head>
+	<strong><link rel = "stylesheet" href = "{{ url_for('static', filename = 'style.css') }}"></strong>
+		<title>
+		Welcome to my MicroBlog
+		</title>
+	</head>
+	<body>
+	    <header>
+		<div class = 'container'>
+		<strong><nav>
+		<ul class = 'menu'>
+			<li><a href="/home">Home</a></li>
+			<li><a href="/post">Post</a></li>
+			<li><a href="/login">Login</a></li>
+		</ul>
+		</nav></strong></div>
+	   </header>
+	</body>
+
+	<div class = 'container'>
+	{% block content %}	
+	{% endblock%}
+	</div>
+</html>

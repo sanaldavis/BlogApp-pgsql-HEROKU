@@ -1,0 +1,21 @@
+{% extends "base_post.html" %}
+
+{% block content %}
+
+<div class = "jumbo" align = 'center'>
+	<u><i><h2> Shoot out your ideas....
+	</h2></i></u>
+
+<form method = "post" action = "{{ url_for('post_store')}}">
+
+<input type = "text" name = "name" />
+<br>
+<textarea name = "blogpost" rows = "15" cols = "50">
+</textarea>
+<br>
+<input type = "submit" value = "Submit" />
+</form>
+
+{% endblock %}
+
+

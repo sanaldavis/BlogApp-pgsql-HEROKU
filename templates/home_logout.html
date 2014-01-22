@@ -1,0 +1,20 @@
+{% extends "base_post.html" %}
+{% block content %}
+	<div class="jumbo">
+	<u><i><h2> Welcome to my blog
+	</h2></i></u>
+{% if post %}
+{% for post in post %}
+	<div align = 'center'>
+	<p>{{post.id}}:
+	<font size="20">{{post.author}}</p></div></font>
+	<h3>
+	{{post.post}}<br>
+	{{post.day}}<br>
+	{{post.time}}<br>
+	</h3>
+{% endfor %}
+{% endif %}
+	</div>
+{% endblock %}
+
